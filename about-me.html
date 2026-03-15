@@ -21,19 +21,31 @@
     <main>
       <section>
         <h2>About Me</h2>
-        <img
-          src="images/photo.JPG"
-          alt="Picture of Majoris Anne Pasicolan"
-          width="200"
-        />
+        <div class="my-image-container">
+          <img
+            id="my-image"
+            onclick="swapImage('my-image', 'images/majo.JPG', 'images/cat.jpg')"
+            src="images/majo.JPG"
+            alt="Picture of Majoris Anne Pasicolan"
+          />
+          <div class="text-on-image">
+            <h3>HEY VISITOR!</h3>
+            <p>Click this to show another image.</p>
+          </div>
+        </div>
         <p>
           I am Majoris Anne B. Pasicolan. I am a Chemical Engineering graduate
           who later shifted careers in search of better opportunities. I
           currently work as a Test Engineer and am still learning web
-          development
+          development.
         </p>
+
+        <button onclick="showFact()">
+          Click this to learn a FUN FACT about me!
+        </button>
       </section>
     </main>
+    <script src="js/about-me.js"></script>
   </body>
 
   <footer>
